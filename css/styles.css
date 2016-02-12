@@ -46,7 +46,7 @@ p#headText {
   top: 340px;
   right: 300px;
   left: -90px;
- margin: 165px;
+  margin: 165px;
 }
 
 .navBar {
@@ -62,7 +62,7 @@ p#headText {
 }
 
 a {
-  display: table-cell;
+  display: inline-flex;
   text-decoration: none;
   color: #1a1500;
   border:1px solid #998000;
@@ -77,14 +77,11 @@ ul {
     background-color: #fffef9;
 }
 
-input:focus {
-  background-color: green;
-  border-radius: 5px;
-}
-
 #emailList {
-  padding-left: 25px;
-  padding-bottom: 25px;
+  width: 500px;
+  padding-bottom: 55px;
+  margin-left: 90px;
+  margin-top: -90px;
 }
 
 input[type="email"] {
@@ -94,10 +91,25 @@ input[type="email"] {
   height: 35px;
   font-size: 1.5em;
   font-family: 'Raleway', sans-serif;
+  margin: 15px;
+  margin-bottom: 10px;
+  transition: ease-in-out, width .35s ease-in-out;
+  background-color: #f0f8ff;
+
+}
+
+input[type="email"]:focus {
+  width: 1285px;
+  outline: none;
 }
 
 input[type="submit"] {
-  width: 500px;
+  width: 200px;
+  margin-bottom: 20px;
+  margin-left: 15px;
+  border: 1px dotted #999;
+  border-radius: 5px;
+  background-color: #f0f8ff;
 }
 
 img[name="art"] {
@@ -105,4 +117,20 @@ img[name="art"] {
   margin: 30px;
   border-radius: 10px;
   box-shadow:5px 5px 5px 0.1px;
+  position: relative;
+}
+
+h1 {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  top: 40px;
+  right: 45px;
+  font-size: 3em;
+  opacity: 0.5;
+}
+
+h2, h3 {
+  position: relative;
+  font-family: 'Raleway', sans-serif;
+  opacity: 0.5;
 }
