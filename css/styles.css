@@ -6,6 +6,12 @@
             box-sizing: border-box;
 }
 
+#background {
+  position: absolute;
+  background-color: #f0f8ff;
+  height: 100%;
+  width: 100%;
+}
 
 .container {
   position: relative;
@@ -13,6 +19,22 @@
   margin-right: auto;
   width: 1500px;
   background-color: #FFFEF9;
+  border-radius: 35px;
+  margin-top: 100px;
+  box-shadow:5px 5px 5px 0.1px;
+}
+
+.container:after{
+	content:"";
+  position:absolute;
+  z-index:-1;
+  top:100%;
+  bottom:0;
+	width:120%;
+	height:90px;
+	left:-10%;
+	right:-10%;
+  background:radial-gradient(ellipse at 50% 30%, rgba(96, 251, 202, 0.8), rgba(112, 220, 255, 0.5), rgba(255, 116, 225, 0.0) 50%), radial-gradient(circle at 80% 10%, rgba(96, 251, 202, 0.8), rgba(255, 255, 255, 0.0) 2%), radial-gradient(circle at 790% 720%, rgba(255, 251, 202, 0.8), rgba(255, 255, 255, 0.0) 1%);
 }
 
 p#headText {
@@ -21,46 +43,66 @@ p#headText {
   font-variant: small-caps;
   font-size: 8em;
   position: absolute;
-  top: 350px;
-  left: 25px;
+  top: 340px;
+  right: 300px;
+  left: -90px;
+ margin: 165px;
 }
 
-/*.box-shadow-menu {
-  position: relative;
-  padding-left: 1.25em;
+.navBar {
+  width: 1500px;
 }
-.box-shadow-menu:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.25em;
-  width: 1em;
-  height: 0.15em;
-  background: black;
-  box-shadow:
-    0 0.25em 0 0 black,
-    0 0.5em 0 0 black;
-}*/
 
 .navBar li{
   list-style-type:none;
   font-family: 'Raleway', sans-serif;
   font-size: 1.5em;
-  display: table-cell;
-  width: auto;
-  text-align: center;
-  padding-left: 104.5px;
-  padding-right: 104.5px;
-  border:1px solid #998000;
+  padding-left: 200px;
+  padding-right: 200px;
 }
 
 a {
   display: table-cell;
   text-decoration: none;
   color: #1a1500;
+  border:1px solid #998000;
 }
 
-.navBar a:hover {
+ul {
+  padding-bottom: 25px;
+}
+
+.navBar a:hover, .active {
     color: #e6bf00;
     background-color: #fffef9;
+}
+
+input:focus {
+  background-color: green;
+  border-radius: 5px;
+}
+
+#emailList {
+  padding-left: 25px;
+  padding-bottom: 25px;
+}
+
+input[type="email"] {
+  border: 1px dotted #999;
+  border-radius: 10px;
+  width: 500px;
+  height: 35px;
+  font-size: 1.5em;
+  font-family: 'Raleway', sans-serif;
+}
+
+input[type="submit"] {
+  width: 500px;
+}
+
+img[name="art"] {
+  float: center;
+  margin: 30px;
+  border-radius: 10px;
+  box-shadow:5px 5px 5px 0.1px;
 }
