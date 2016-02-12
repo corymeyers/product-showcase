@@ -41,24 +41,26 @@ p#headText {
     0 0.25em 0 0 black,
     0 0.5em 0 0 black;
 }*/
-.navBar {
-  border:1px solid #42432d;
-  width: 100%
-}
-
-
 
 .navBar li{
-list-style-type:none;
-display: inline;
-font-family: 'Raleway', sans-serif;
-font-size: 1.5em;
-display: table-cell;
-/*width: auto;
-text-align: center;*/
-padding-left: 100px;
+  list-style-type:none;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  display: table-cell;
+  width: auto;
+  text-align: center;
+  padding-left: 104.5px;
+  padding-right: 104.5px;
+  border:1px solid #998000;
+}
 
-padding-right: 100px;
+a {
+  display: table-cell;
+  text-decoration: none;
+  color: #1a1500;
+}
 
-border:1px solid blue;
+.navBar a:hover {
+    color: #e6bf00;
+    background-color: #fffef9;
 }
